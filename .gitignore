@@ -1,0 +1,20 @@
+# Rust build artifacts
+/target/
+
+# Config with sensitive information
+config.toml
+.env
+
+# Bot data directory
+.gh-issues-bot/
+
+# IDE files
+.idea/
+.vscode/
+
+# Backup files
+**/*.rs.bk
+**/*.bk
+
+# macOS metadata
+.DS_Store

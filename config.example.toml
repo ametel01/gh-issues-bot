@@ -1,0 +1,38 @@
+# GitHub authentication
+auth_token = "your_github_personal_access_token"
+user_login = "your_github_username"
+
+# Bot settings
+poll_interval_secs = 45
+max_retries = 3
+cooldown_hours = 24
+
+# Random comments to appear human-like
+comment_templates = [
+  "Hi there! I'd love to work on this issue if it's still available.",
+  "This looks interesting, may I be assigned to work on it?",
+  "I'd like to contribute to this issue. Is it still up for grabs?",
+  "Hi! I'd be happy to tackle this issue if nobody is working on it yet.",
+  "I'm interested in working on this. Would you mind assigning it to me?"
+]
+
+# Repositories to monitor
+
+[[repositories]]
+owner = "rust-lang"
+repo = "rust"
+labels = ["good first issue", "E-easy"]
+
+[[repositories]]
+owner = "tokio-rs"
+repo = "tokio"
+labels = ["help wanted", "good first issue"]
+# Optional: only match issues with titles containing certain patterns
+title_regex = "(fix|implement|add|update)"
+# Optional: exclude issues with these labels
+exclude_labels = ["blocked", "in-progress"]
+
+[[repositories]]
+owner = "actix"
+repo = "actix-web"
+labels = ["good first issue"] 
